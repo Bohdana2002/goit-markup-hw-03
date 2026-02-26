@@ -1,5 +1,5 @@
 h1,h2,h3,h4,h5,h6,p {
-    margin: 0
+    margin: 0;
 }
 ul {
     padding: 0;
@@ -196,9 +196,11 @@ body {
     text-transform: capitalize;
     margin-bottom: 72px;
 }
+/*.portfolio-images {
+    width: calc((100% - 24px * 3) / 4);
+} */
 .team-list {
     display: flex;
-    flex-wrap: wrap;
     column-gap: 24px;
 }
 .team-images {
@@ -211,6 +213,7 @@ body {
 .team-item {
     background-color:#ffffff;
     border-radius: 0 0 4px 4px;
+    /* width: calc((100% - 24px * 4) / 6);; */
 }
 .portfolio {
     display: flex;
@@ -222,12 +225,17 @@ body {
 } 
 .low-part {
     background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-par {
-    color: #E7E9FC;
+    color: var(--footer-text-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 16px;
+    max-width: 264px;
+    
 }
 
 .low-studio {
@@ -242,7 +250,4 @@ body {
 }
 :root {
     --footer-text-color: #F4F4FD;
-}
-.footer-par {
-    color: var(--footer-text-color);
 }
