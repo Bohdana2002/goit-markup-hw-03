@@ -22,12 +22,16 @@ img {
 .section {
     padding: 120px 0;
 }
+.main-header {
+    border-bottom: 1px solid #e7e9fc;
+}
 .header-container {
     display: flex;
     justify-content: space-between;
 }
 .navigation {
     display: flex;
+    align-items: center;
 }
 .nav-list {
     display: flex;
@@ -87,7 +91,9 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
-
+.list {
+    width: calc((100% - 72px) / 4);
+}
 .contacts-list .contacts-links {
     color: #434455;
 }
@@ -125,7 +131,6 @@ body {
     text-align: center;
     max-width: 496px;
 }
-
 .btn {
     min-width: 169px;
     height: 56px;
@@ -141,12 +146,10 @@ body {
     cursor: pointer;
     border-radius: 4px;
 }
-
 .btn:hover,
 .btn:focus {
     background-color: #404BBF;
 }
-
 .sec-back {
     text-align: center;
 }
@@ -174,8 +177,13 @@ body {
     letter-spacing: 0.02em;
     padding-bottom: 8px;
     text-align: center;
+    margin-bottom: 8px;
+    text-align: center;
+    margin-bottom: 8px;
 }
-
+.team-block {
+    padding: 32px 0;
+}
 .features-text {
     color: #434455;
     font-weight: 400;
@@ -184,8 +192,8 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     padding-bottom: 32px;
+    text-align: center;
 }
-
 .descriptions-subtitle {
     color: #2E2F42;
     font-weight: 700;
@@ -196,17 +204,14 @@ body {
     text-transform: capitalize;
     margin-bottom: 72px;
 }
-/*.portfolio-images {
-    width: calc((100% - 24px * 3) / 4);
-} */
 .team-list {
     display: flex;
     column-gap: 24px;
+    gap: 24px;
 }
 .team-images {
     padding-bottom: 32px; 
 }
-
 .section-team {
     background-color: #f4f4fd;
 }
@@ -223,21 +228,23 @@ body {
 .portfolio-text {
     text-align: left;
 } 
+.images-block {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
 .low-part {
     background-color: #2E2F42;
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
 .footer-par {
     color: var(--footer-text-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-top: 16px;
     max-width: 264px;
     
 }
-
 .low-studio {
     color: #F4F4FD;
     font-family: 'Raleway', sans-serif;
@@ -250,4 +257,8 @@ body {
 }
 :root {
     --footer-text-color: #F4F4FD;
+}
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
